@@ -3,5 +3,5 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   padding: 20px;
-  background: #7159c1;
+  background: #191920;
 `;
