@@ -27,6 +27,7 @@ export const ProductImage = styled.Image`
 export const ProductInformationsContainer = styled.View`
   width: 170px;
   margin-left: 10px;
+  margin-right: 5px;
 `;
 
 export const ProductTitle = styled.Text`
@@ -50,4 +51,24 @@ export const ProductQuantity = styled.Text`
   border-radius: 10px;
 `;
 
-export const RemoveProduct = styled.TouchableOpacity``;
+export const RemoveProduct = styled.TouchableOpacity`
+  padding: 5px;
+`;
+
+export const TotalContainer = styled.View`
+  margin: 10px 20px 15px;
+  flex-direction: row;
+  align-items: baseline;
+`;
+
+export const TotalText = styled.Text`
+  font-size: 32px;
+  color: #333;
+  font-weight: bold;
+`;
+
+export const TotalPrice = styled.Text`
+  font-size: 28px;
+  color: #222;
+  margin-left: 8px;
+`;
