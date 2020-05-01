@@ -1,3 +1,4 @@
+import { Alert } from 'react-native';
 import { call, put, all, select, takeLatest } from 'redux-saga/effects';
 
 import api from '../../../services/api';
@@ -17,7 +18,8 @@ function* addToCart({ id }) {
   const newAmount = currentAmount + 1;
 
   if (newAmount > stockAmount) {
-    return console.tron.log('Estoque completo');
+    Alert.alert('Quantidade solicitada fora de estoque');
+    return;
   }
 
   if (productExists) {
